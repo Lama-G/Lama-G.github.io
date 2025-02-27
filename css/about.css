@@ -1,0 +1,112 @@
+/* ✅ إعداد التصميم العام */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ تحسين الحاوية */
+.container {
+    max-width: 900px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ تحسين الهيدر */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #8B4513;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ✅ تحسين الأقسام */
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    color: #8B4513;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* ✅ تحسين القوائم */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "•";
+    color: #8B4513;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* ✅ 📱 تحسين الموقع للأجهزة الصغيرة (576px) */
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}
+
+/* ✅ 📱 تحسين الموقع للأجهزة المتوسطة (768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 21px;
+    }
+}
+
+/* ✅ 🖥 تحسين الموقع للأجهزة الكبيرة (992px) */
+@media (max-width: 992px) {
+    .container {
+        width: 75%;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+}
+

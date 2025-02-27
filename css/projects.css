@@ -1,0 +1,103 @@
+/* ✅ إعداد التصميم العام */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ تحسين الحاوية */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* ✅ تحسين العناوين */
+h1 {
+    text-align: center;
+    color: #9d6944;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #9d6944;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ✅ تصميم كل مشروع بحيث يكون واضحًا ومنفصلًا */
+.project {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    border: 2px solid #ccc; /* إضافة حدود خفيفة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+/* ✅ تحسين تنسيق المحتوى داخل كل مشروع */
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ✅ تقسيم النص والصورة بالتساوي */
+.text {
+    flex: 1;
+    padding: 10px;
+}
+
+/* ✅ تحسين شكل الـ Carousel */
+.carousel-container {
+    flex: 1;
+    padding: 10px;
+    border-left: 2px solid #ccc; /* إضافة خط فاصل بين النص والصورة */
+}
+
+.carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ✅ تحسين الأزرار */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ تحسين استجابة الصفحة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-container {
+        border-left: none;
+        border-top: 2px solid #ccc; /* الخط الفاصل يصبح أفقيًا */
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+}
